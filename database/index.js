@@ -10,5 +10,5 @@ conn.connect((err)=>{
     err?console.log(err):console.log("database connected")
 })
 
-
+//credentials
 module.exports=conn
