@@ -19,7 +19,7 @@ module.exports={
             err?res.status(500).send(err):res.status(200).json(results);
         },[req.body.productName,req.body.activeIngredient,req.body.type,
             req.body.price,req.body.prescOnly,req.body.qty,req.body.expires,
-        req.body.refrigerate,req.body.providers,req.body.productImage,req.body.productName])
+        req.body.refrigerate,req.body.providers,req.body.productImage,req.body.prevName])
         //price=?,qty=?,expires=?  WHERE productName=?
     },
     deleteStock:(req,res)=>{
